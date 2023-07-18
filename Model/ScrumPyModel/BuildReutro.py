@@ -4,6 +4,7 @@
 
 from Util import Set
 from Bioinf import PyoCyc
+from importlib import reload #added by Manuel, don't know if correct
 
 import BuildOrg2, CompartmentDic
 reloads = [BuildOrg2,CompartmentDic]
