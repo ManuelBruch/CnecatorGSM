@@ -4,7 +4,7 @@ reac_expression_data = xlsread('CnecatorH16_ReactionExpression.xlsx');
 exp_f26_RPKM = reac_expression_data(:,2);
 exp_f16_RPKM = reac_expression_data(:,1);
 
-m = readCbModel('../Model/iCN1361.xml');
+m = readCbModel('..\Model\iCN1361.xml');
 m = changeRxnBounds(m, 'R_QUIN_OXIDASE_b03', 0, 'b');
 m = changeRxnBounds(m, 'R_QUIN_OXIDASE_bd', 0, 'b');
 m = changeRxnBounds(m, 'R_Biomass', 0.2, 'b');
